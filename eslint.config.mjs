@@ -10,5 +10,11 @@ export default defineConfig([
     languageOptions: {
       globals: globals.node
     }
+  },
+  {
+    files: ["tests/**/*.js"],
+    languageOptions: {
+      globals: globals.jest
+    }
   }
 ]);
