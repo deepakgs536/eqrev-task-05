@@ -15,6 +15,11 @@ export default defineConfig([
     files: ["tests/**/*.js"],
     languageOptions: {
       globals: globals.jest
+    },
+    rules: {
+      semi: ['error', 'always'],
+      quotes: ['error', 'single'],
+      indent: ['error', 2]
     }
   }
 ]);
